@@ -496,7 +496,7 @@ pub struct SavedField {
 }
 
 /// A saved field's data container (in memory or on disk)
-#[derive(Debug)]
+#[derive(Clone, Debug)]
 pub enum SavedData {
     /// Validated UTF-8 text data.
     Text(String),
